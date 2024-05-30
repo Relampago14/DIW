@@ -1,0 +1,17 @@
+body{
+    background-color: yellow;
+}
+
+h1{
+    color: blue;
+}
+
+/*ASSOCIAÇÃO PELO ID DO ELEMENTO*/
+#titulo_2{
+    color:orange;
+    
+}
+/*ASSOCIAÇÃO PELA CLASS DO ELEMENTO*/
+.titulo{
+    text-align: center;
+}

@@ -1,0 +1,17 @@
+table{
+    background-color: gray;
+}
+
+caption{
+    background-color: blue;
+    color: red;
+    font-size: larger;
+}
+
+th {
+    background-color: beige;
+}
+
+td{
+    background-color: violet;
+}

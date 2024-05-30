@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente de API</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+</head>
+<body>
+    <div id="tela"></div>
+
+    <script>
+        // AJAX usando FETCH
+
+        // fetch ('https://api.github.com/users/Relampago14')
+        //     .then(res => res.json ())
+        //     .then(data => 
+        //         document.getElementById('tela').innerHTML = data.bio)
+
+
+        // AJAX usando JQUERY
+
+        // $.ajax({
+        //     url: 'https://api.github.com/users/Relampago14'
+        // })
+        // .done (response => {
+        //     console.log('Biografia: ' + response.bio)
+        //     document.getElementById('tela').innerHTML = response.bio
+        // })
+
+
+        // AJAX usando XHR
+
+        let xhr = new XMLHttpRequest();
+        xhr.onload = function (event){
+            let data = JSON.parse(event.target.response)
+            console.log(data);
+            document.getElementById('tela').innerHTML = data.bio
+        }
+        xhr.open('GET', 'https://api.github.com/users/Relampago14');
+        xhr.send();
+
+       
+        
+    </script>
+</body>
+</html>
