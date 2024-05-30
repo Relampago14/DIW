@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    order: 2;
+    font-family: sans-serif;
+    text-align: center;
+}
+section > h1{
+    font-size: 2.75rem;
+    padding: 5px 0 10px;
+}
+section > h4{
+    font-size: 20px;
+    color: gray;
+    margin: 0 0 40px;
+}
+
+footer{
+    order: 4;
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    height: 100px;
+}
+
+@media only screen and (max-width:9000px){
+  .content h2{
+    margin-top: 0;
+  }
+    footer{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        justify-content: baseline;
+    }
+}
+
+@media only screen and (max-width: 1750px){
+
+}
+
+
+@media only screen and (max-width: 1400px){
+    footer{
+        height: 85px;
+    }
+
+}
+
+@media only screen and (max-width: 1200px){
+    section{
+      width: 100%;
+    }
+    aside{
+      width: 100%;
+    }
+    .content h2{
+        padding: 0px 100px 0px;
+    }
+    .content h4{
+        padding: 0px 200px 0px;
+    }
+    footer{
+      position: relative;
+      height: 80px;
+    }
+}
+
+@media only screen and (max-width:768px){
+    section{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+    }
+    .presentation h1{
+        font-size: 2rem;
+    }
+    .presentation h4{
+        font-size: 1rem;
+    }
+    .calculator input[id="custo"]{
+        width: 200px;
+        height: 50px;
+    }
+    .calculator input[id="lucro"]{
+        width: 200px;
+        height: 50px;
+    }
+    .content h2{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .content h4{
+        padding: 5px 15px 5px;
+    }
+    footer{
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width:330px){
+    aside{
+        width: 100%;
+    }
+    .presentation h1{
+        font-size: 1.5rem;
+    }
+    .presentation h4{
+        font-size: 0.75rem;
+    }
+}

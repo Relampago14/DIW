@@ -1,0 +1,8 @@
+<input type="button" id="CopyBTN" onclick="copy()" value="Copiar">
+
+// copia o resultado para a área de transferência (CTRL + C)
+document.getElementsById('CopyBTN').addEventListener('click', CopyBTN);
+function copy() {
+    document.getElementById('resultado').select();
+    document.execCommand("copy");
+}

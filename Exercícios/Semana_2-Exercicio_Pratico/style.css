@@ -1,0 +1,118 @@
+*{
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: beige;
+}
+
+header{
+    width: 100%;
+    height: 150px;
+    background-color: coral;
+}
+
+img{
+    margin-top: 25px;
+    margin-left: 30px;
+    width: 100px;
+    height: 100px;
+}
+
+header > ul > li{
+    padding-right: 30px;
+    list-style: none;
+    float: left;
+}
+
+header > ul > li > p{
+    font-size: 20px;
+}
+
+h1{
+    font-size: 40px;
+    margin-top: 30px;
+    align-content: center;
+}
+
+aside{
+    margin-left: 1%;
+    float: left;
+    margin-top: 10px;
+    width: 29%;
+}
+
+aside > ul > li{
+    font-size: 20px;
+    margin-left: 17px;
+    list-style: square;
+}
+
+h2{
+    margin-top: 30px;
+}
+
+#Lang{
+    margin-top: 200px;
+}
+
+#v_line {
+    margin-right: 2%;
+    float: left;
+    border-left: 1px solid gray;
+    height: 816px;
+}
+
+main{
+    float: right;
+    width: 69%;
+}
+
+p{
+    font-size: 20px;
+}
+
+#descricao{
+    margin-top: 27px;
+}
+
+#titulo_experiencias{
+    padding-bottom: 2%;
+}
+
+.exp{
+    padding-bottom: 130px;
+}
+
+.cargo{
+    font-style: oblique;
+    font-size: 25px;
+    width: 73%;
+    float: left;
+}
+
+.periodo{
+    font-size: 18px;
+    float: right;
+    margin-right: 5%;
+}
+
+.empresa{
+    margin-left: 1%;
+    font-size: 16px;
+    float: left;
+    width: 73%;
+}
+
+.descr_atv{
+    margin-left: 3%;
+    padding-top: 10px;
+    width: 70%;
+    float: left;
+}
+
+.esc{
+    padding-bottom: 80px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <title>Projeto CalcuLucro</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="header-1">
+                <div class="logo">
+                    <img src="../img/lucro.png" />
+                </div>
+            </div>
+        </header>
+        <section id="titulo">
+            <h1>Calculadora de Lucro</h1>
+            <h4>Essa simples calculadora vai ajudar você nas suas vendas, a economizar e a lucrar mais!</h4>
+        </section>
+        <main>
+          <section id="calculadora">
+            <div class="calculator">
+                <span id="text1">Custo:</span><br>
+                <input type="number" id="custo" placeholder="Ex.: 100,90"><br>
+                <span id="text2">Lucro:</span>
+                <br>
+                <input type="number" id="lucro" placeholder="Ex.: 60"><br>
+                <input type="button" id="CalcBTN" onclick="math()" value="Calcular"><br>
+                <p id="resultado">0,00</p>
+            </div>
+          </section>
+          <aside>
+              <div class="content">
+                  <h2>Como calcular o lucro?</h2><br> 
+                  <h4>Para se calcular o lucro, devemos levar em consideração diversos fatores.
+                  <font color="#ff000"> O preço de compra,</font>
+                  <font color="#ff000">o custo de manutenção do item,</font>
+                  <font color="#ff000">a concorrência,</font>
+                  <font color="#ff000">datas comemorativas,</font>
+                  como por exemplo a Páscoa ou a Black Friday, tudo isso necessita de ser levantado até chegarmos em um preço de venda satisfatório tanto para o consumidor, como também, 
+                  obviamente, para você que está vendendo um serviço ou um produto. Resumindo, o lucro é o valor que se ganha em cima das despesas que uma determinada mercadoria gera para 
+                  sua empresa.
+                  </h4>
+                  <br>
+              </div>
+          </aside>
+        </main>
+
+        <footer>
+            
+        </footer>
+    </body>
+
+    <script>         
+        
+        // calcula o lucro
+        function math() {
+
+            var x = document.getElementById("custo").value;
+            var y = document.getElementById("lucro").value;
+            var lucro = Number(y) + Number(100);
+            var z = Number(x * lucro / Number(100));
+            var z = z.toFixed(2);
+            var newz = z.replace(".", ",")
+            document.getElementById("resultado").innerText = newz;
+            }
+
+    </script>
+
+</html>
