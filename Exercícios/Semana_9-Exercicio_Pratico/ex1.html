@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média</title>
+</head>
+
+<body>
+
+    <script>
+
+        // Solicita um número ao usuário
+        var nota1 = parseFloat(prompt("Digite a primeira nota:"));
+
+        // Enquanto o usuário digitar um valor inválido
+        while (isNaN(nota1)){
+
+            // Solicita novamente uma nota ao usuário
+            var nota1 = parseFloat(prompt("Tentativa inválida. Digite a primeira nota novamente: "));
+
+        }
+
+        var nota2 = parseFloat(prompt("Digite a segunda nota:"));
+
+        // Enquanto o usuário digitar um valor inválido
+        while (isNaN(nota2)){
+
+            // Solicita novamente uma nota ao usuário
+            var nota2 = parseFloat(prompt("Tentativa inválida. Digite a primeira nota novamente: "));
+
+        }
+
+        var nota3 = parseFloat(prompt("Digite a terceira nota:"));
+
+        // Enquanto o usuário digitar um valor inválido
+        while (isNaN(nota3)){
+
+            // Solicita novamente uma nota ao usuário
+            var nota3 = parseFloat(prompt("Tentativa inválida. Digite a primeira nota novamente: "));
+
+        }
+
+        // Converte os valores de string para número e calcula a média
+        var media = (nota1 + nota2 + nota3) / 3;
+
+        // Exibe o resultado
+        alert("A média das três notas é: " + media);
+
+    </script>
+
+</body>
+</html> 

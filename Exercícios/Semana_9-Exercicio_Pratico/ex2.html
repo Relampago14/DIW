@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+
+<body>
+
+    <script>
+
+        // Solicita uma operação ao usuário
+        var operacao = prompt("Digite qual operação você quer (1 - soma; 2 - subtração; 3 - multiplicação; 4 - divisão): ");
+
+
+        // Enquanto o usuário digitar a opção errada
+        while (operacao != "1" && operacao != "2" && operacao != "3" && operacao != "4" ){
+
+            // Solicita novamente uma operação ao usuário
+            var operacao = prompt("Por favor, digite uma opção válida (1 - soma; 2 - subtração; 3 - multiplicação; 4 - divisão): ");
+
+        }
+    
+        // Solicita um número ao usuário
+        var n1 = parseFloat(prompt("Digite o primeiro número: "));
+
+        // Enquanto o usuário digitar um valor inválido
+        while (isNaN(n1)){
+
+            // Solicita novamente um número ao usuário
+            var n1 = parseFloat(prompt("Tentativa inválida. Digite o primeiro número novamente: "));
+
+        }
+
+        // Solicita outro número ao usuário
+        var n2 = parseFloat(prompt("Digite o segundo número: "));
+
+        // Enquanto o usuário digitar um valor inválido
+        while (isNaN(n2)){
+
+            // Solicita novamente um número ao usuário
+            var n2 = parseFloat(prompt("Tentativa inválida. Digite o segundo número novamente: "));
+
+        }
+
+        // Dependendo do valor, faz a operação solicitada
+        switch (operacao) {
+
+            case "1":
+
+                resultado = n1 + n2;
+                break;
+
+            case "2":
+
+                resultado = n1 - n2;
+                break;
+
+            case "3":
+
+                resultado = n1 * n2;
+                break;
+
+            case "4":
+
+                // Verifica se o segundo número não é zero para evitar divisão por zero
+                while (n2 == 0){
+
+                    // Solicita novamente um número ao usuário
+                    var n2 = prompt("Houve uma tentativa de divisão por zero. Insira outro valor para o segundo número: ");
+
+                }
+                
+                resultado = n1 / n2;
+
+                break;
+
+            break;
+
+        }
+
+        // Exibe o resultado
+        alert("O resultado é: " + resultado);
+
+    </script>
+
+</body>
+</html> 

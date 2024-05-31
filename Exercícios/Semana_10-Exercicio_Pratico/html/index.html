@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- link com o código CSS da página -->
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+        
+        <title>Conversor de Moedas</title>
+    </head>
+
+    <body>
+
+        <!-- Título e subtítulo da página -->
+        <section id="titulo">
+            <h1>Conversor de Moedas</h1>
+            <h4>Essa simples calculadora vai ajudar você a converter uma moeda em outra</h4>
+        </section>
+
+        <!-- Parte principal da página -->
+        <main>
+        <section id="calculadora">
+            <div class="calculator">
+                <span>Escolha a moeda inicial:</span>
+                <br>
+                <!-- Caixa de Seleção da Moeda de origem -->
+                <select name="moedas" id="moedas_ini">
+                    <option value="dólar-eua">Dólar Americano</option>
+                    <option value="euro">Euro</option>
+                    <option value="peso_arg">Peso Argentino</option>
+                    <option value="bitcoin">Bitcoin</option>
+                </select>
+                <br>
+                <span>Valor inicial:</span>
+                <br>
+                <!-- Valor desejado par aconversão da moeda de origem -->
+                <input type="number" id="v_inicial" placeholder="Ex.: Insira o valor">
+                <br>
+
+                <span>Insira a moeda para converter:</span>
+                <br>
+                <!-- Caixa de Seleção da Moeda de destino -->
+                <select name="moedas" id="moedas_conv">
+                    <option value="dólar-eua">Dólar Americano</option>
+                    <option value="euro">Euro</option>
+                    <option value="peso_arg">Peso Argentino</option>
+                    <option value="bitcoin">Bitcoin</option>
+                </select>
+                <br>
+
+                <!-- Botão para realizar o cálculo da conversão -->
+                <button id="CalcBTN">
+                    Calcular
+                </button>
+                <br>
+
+                <!-- tag "p" que exibe o resultado -->
+                <p id="resultado">0,00</p>
+            </div>
+        </section>
+        </main>
+
+        <!-- link com o código em JavaScript para realizar a conversão -->
+        <script src="../js/scripts.js"></script>
+
+    </body>
+
+</html>
